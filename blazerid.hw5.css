@@ -1,34 +1,81 @@
-/* Setting the box-sizing to border-box and the padding and margin on all elements to 0 pixels. */
-* {
-    padding: 0;
+/* Reset default margin and padding */
+body, html {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
 }
 
-/* header element styling */
-header {
-    position: sticky;
-    top: 0;
-    background-color: yellow;
-    border-bottom: 2px solid black;
+/* Center the flex container both horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Background color for bonus points */
 }
 
-/* main element styling*/
-main {
-    width: 80%;
-    margin: 0 auto;
-    background-color: lightblue;
+/* Style for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns */
+    grid-template-rows: repeat(3, 100px);    /* 3 rows */
+    gap: 10px; /* Adjust the gap between grid items */
 }
 
-/* footer element styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgreen;
+/* Style for grid items */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    outline: 2px solid black; /* Add a 2px black outline to each grid item */
+    border-radius: 8px; /* Rounded corners for bonus points */
 }
 
-/* paragraph element styling */
-p {
-    padding: 1em;
+/* Color the grid items */
+.grid-item:nth-child(1) {
+    background-color: #3498db; /* Blue */
+    color: #fff; /* Font color */
 }
+
+.grid-item:nth-child(2) {
+    background-color: #e74c3c; /* Red */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(3) {
+    background-color: #2ecc71; /* Green */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(4) {
+    background-color: #f1c40f; /* Yellow */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(5) {
+    background-color: #9b59b6; /* Purple */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(6) {
+    background-color: #34495e; /* Dark Blue */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(7) {
+    background-color: #e67e22; /* Orange */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(8) {
+    background-color: #1abc9c; /* Teal */
+    color: #fff; /* Font color */
+}
+
+.grid-item:nth-child(9) {
+    background-color: #d35400; /* Brown */
+    color: #fff; /* Font color */
+}
+
+/* Additional styling for bonus points */
+/* You can add more styling enhancements here */
